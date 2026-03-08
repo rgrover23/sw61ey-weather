@@ -93,7 +93,9 @@ function HourlyForecast({ hourly }) {
 }
 
 function formatDayLabel(dateStr) {
-  const date = new Date(dateStr + 'T12:00:00')
+  // Parse as YYYY-MM-DD to avoid timezone shift when constructing a Date.
+  const [year, month, day] = dateStr.split('-').map(Number)
+  const date = new Date(year, month - 1, day)
   return date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })
 }
 
