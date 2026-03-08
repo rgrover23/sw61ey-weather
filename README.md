@@ -1,6 +1,8 @@
 # SW6 1EY Weather Dashboard
 
-**🌐 Live site: <https://rgrover23.github.io/sw61ey-weather/>**
+**⚡ Open instantly in browser (no install):** [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rgrover23/sw61ey-weather/tree/main)
+
+**🌐 Live site (GitHub Pages):** <https://rgrover23.github.io/sw61ey-weather/>
 
 A modern, responsive weather dashboard for **SW6 1EY, London, UK** built with React + Vite + Tailwind CSS.
 
@@ -42,11 +44,11 @@ src/
 
 ## Getting Started
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) **v18 or later** (includes `npm`)
+> **No install needed!** Use [StackBlitz](https://stackblitz.com/github/rgrover23/sw61ey-weather/tree/main) to run the app instantly in your browser. See [Accessing the Dashboard](#accessing-the-dashboard) for all options.
 
 ### Run locally
+
+**Prerequisites:** [Node.js](https://nodejs.org/) v18 or later
 
 1. **Install dependencies**
 
@@ -66,13 +68,35 @@ src/
 
 ## Accessing the Dashboard
 
-| Mode | How | URL |
-|------|-----|-----|
-| **Live (GitHub Pages)** | No setup needed | **<https://rgrover23.github.io/sw61ey-weather/>** |
-| Development | `npm run dev` | <http://localhost:5173> |
-| Production preview | `npm run build && npm run preview` | <http://localhost:4173> |
+### Option 1 — StackBlitz (instant, no install) ✅
 
-> **No API key is needed.** Weather data is fetched directly from the free [Open-Meteo API](https://open-meteo.com/) when the page loads.
+Click the badge above or go to:
+
+**<https://stackblitz.com/github/rgrover23/sw61ey-weather/tree/main>**
+
+StackBlitz opens the repo in a browser-based IDE, installs dependencies, and starts the Vite dev server — all automatically. Nothing to install locally.
+
+### Option 2 — GitHub Pages (permanent public URL)
+
+The repository includes a GitHub Actions workflow that automatically builds and deploys the app to GitHub Pages on every push to `main`.
+
+**One-time setup** (repo owner only, takes ~30 seconds):
+
+1. Go to **[Repository Settings → Pages](https://github.com/rgrover23/sw61ey-weather/settings/pages)**
+2. Under **"Build and deployment"**, set **Source** to **`GitHub Actions`**
+3. Click **Save**
+
+Once activated, every push to `main` triggers a build and the app is live at:
+
+**<https://rgrover23.github.io/sw61ey-weather/>**
+
+### Option 3 — Run locally
+
+| Step | Command |
+|------|---------|
+| Install | `npm install` |
+| Start dev server | `npm run dev` |
+| Open | <http://localhost:5173> |
 
 ## Build for Production
 
