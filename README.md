@@ -40,19 +40,45 @@ src/
 
 ## Getting Started
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) **v18 or later** (includes `npm`)
+
+### Run locally
+
+1. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Open the dashboard** — navigate to **<http://localhost:5173>** in your browser.
+
+   The page hot-reloads automatically when you save a file.
+
+## Accessing the Dashboard
+
+| Mode | Command | URL |
+|------|---------|-----|
+| Development | `npm run dev` | <http://localhost:5173> |
+| Production preview | `npm run build && npm run preview` | <http://localhost:4173> |
+
+> **No API key is needed.** Weather data is fetched directly from the free [Open-Meteo API](https://open-meteo.com/) when the page loads.
+
+## Build for Production
+
 ```bash
-npm install
-npm run dev
+npm run build      # outputs optimised files to dist/
+npm run preview    # serves the dist/ folder locally to verify the build
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-## Build
-
-```bash
-npm run build
-npm run preview
-```
+Deploy the contents of the `dist/` folder to any static hosting service (GitHub Pages, Vercel, Netlify, etc.).
 
 ## Extending
 
