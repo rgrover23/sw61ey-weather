@@ -1,5 +1,7 @@
 # SW6 1EY Weather Dashboard
 
+**🌐 Live site: <https://rgrover23.github.io/sw61ey-weather/>**
+
 A modern, responsive weather dashboard for **SW6 1EY, London, UK** built with React + Vite + Tailwind CSS.
 
 ## Features
@@ -64,8 +66,9 @@ src/
 
 ## Accessing the Dashboard
 
-| Mode | Command | URL |
-|------|---------|-----|
+| Mode | How | URL |
+|------|-----|-----|
+| **Live (GitHub Pages)** | No setup needed | **<https://rgrover23.github.io/sw61ey-weather/>** |
 | Development | `npm run dev` | <http://localhost:5173> |
 | Production preview | `npm run build && npm run preview` | <http://localhost:4173> |
 
